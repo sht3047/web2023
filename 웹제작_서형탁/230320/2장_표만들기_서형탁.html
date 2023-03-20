@@ -1,0 +1,424 @@
+<!-- 
+  File Creation Date
+  2023-03-20
+  2장_표만들기_서형탁.html
+
+  Writer: SHT/201895050
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>표 만들기 - SHT</title>
+    <style>
+      .slot td {
+        border: 2px black solid;
+        background-color: beige;
+      }
+
+      tbody th{
+        background-color: beige;
+      }
+      .subject{
+        background-color: lightgoldenrodyellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 230317 -->
+    <div class="1">
+      <h1>2줄 3칸 표 만들기</h1>
+
+      <table border="3" width="50%">
+        <caption>
+          <strong>General Table</strong>
+          <br>
+          2row, 3col
+        </caption>
+        <!-- row 1 -->
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <!-- row 2 -->
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr />
+    <div class="2">
+      <h1>표의 제목 셀 만들기</h1>
+      <figure>
+        <figcaption>
+          Table Title Shell
+        </figcaption>
+      </figure>
+      <table border="3" width="100%">
+        <!-- row 1 -->
+        <tr>
+          <th>학과</th>
+          <td>컴퓨터소프트웨어공학부</td>
+        </tr>
+        <!-- row 2 -->
+        <tr>
+          <th>학번</th>
+          <td>201895050</td>
+        </tr>
+        <!-- row 3 -->
+        <tr>
+          <th>이름</th>
+          <td>서형탁</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr />
+    <div class="3">
+      <h1>셀 합치기</h1>
+      <table border="3" width="100%">
+        <!-- row 1 -->
+        <tr>
+          <td colspan="3">123</td>
+          <td rowspan="3">4 <br> 8 <br> 12 </td>
+        </tr>
+        <!-- row 2 -->
+        <tr>
+          <td rowspan="2">5 <br> 9</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <!-- row 3 -->
+        <tr>
+          <td>10</td>
+          <td>11</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr />
+
+    <!-- 230320 -->
+    <div class="4">
+      <h2>2023년 1학기 시간표</h2>
+      <table border="1" width="100%">
+        <thead style="background-color: khaki;">
+          <th>
+            구분
+          </th>
+          <th>
+            月
+          </th>
+          <th>
+            火
+          </th>
+          <th>
+            水
+          </th>
+          <th>
+            木
+          </th>
+          <th>
+            金
+          </th>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              1교시
+            </th>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+            <td rowspan="2" class="subject">
+              빅데이터 분석
+            </td>
+            <td rowspan="3" class="subject">
+              LabScale
+            </td>
+          </tr>
+          <tr>
+            <th>
+              2교시
+            </th>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+          </tr>
+          <tr>
+            <th>
+              3교시
+            </th>
+            <td>
+              
+            </td>
+            <td rowspan="2" class="subject">
+              한국의 문화유산
+            </td>
+            <td rowspan="2" class="subject">
+              빅데이터 분석
+            </td>
+            <td>
+              
+            </td>
+          </tr>
+          <tr>
+            <th>
+              4교시
+            </th>
+            
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+          </tr>
+          <tr>
+            <th>
+              5교시
+            </th>
+            <td class="subject">
+              클라우드 컴퓨팅
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+            <td rowspan="2" class="subject">
+              웹제작
+            </td>
+          </tr>
+          <tr>
+            <th>
+              6교시
+            </th>
+            <td>
+              
+            </td>
+            <td rowspan="2" class="subject">
+              클라우드 컴퓨팅
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+          </tr>
+          <tr>
+            <th>
+              7교시
+            </th>
+            <td rowspan="2" class="subject">
+              웹제작
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+          </tr>
+          <tr>
+            <th>
+              8교시
+            </th>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+            <td rowspan="1" class="subject">
+              진로지도
+            </td>
+            <td>
+              
+            </td>
+          </tr>
+          <tr>
+            <th>
+              9교시
+            </th>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+            <td>
+              
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="6">
+            1교시는 9시 30분 부터 입니다.
+          </td>
+        </tfoot>
+  
+      </table>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <table class="slot">
+      <tr>
+        <th>table</th>
+        <th>slot 1</th>
+        <th>slot 2</th>
+        <th>slot 3</th>
+        <th>slot 4</th>
+        <th>slot 5</th>
+        <th>slot 6</th>
+        <th>slot 7</th>
+        <th>slot 8</th>
+        <th>slot 9</th>
+      </tr>
+      <tr>
+        <th>row 1</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>row 2</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>row 3</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>row 4</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>row 5</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>row 6</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
