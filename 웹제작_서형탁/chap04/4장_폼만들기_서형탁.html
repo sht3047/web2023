@@ -1,0 +1,54 @@
+<!-- 
+File Creation Date
+2023-03-24
+4장_표만들기_서형탁.html
+
+Writer: SHT/201895050
+-->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chap 04 - Form</title>
+    </head>
+    <body>
+        <!-- 230324 -->
+        <!-- Form -->
+        <div class="1">
+            <h1>사용자 입력을 위한 Form</h1>
+            <form name="myForm" method="get" action="result.html">
+                <fieldset>
+                    <legend>필수입력</legend>
+                    [이름] : <input type="text" name="user_name" id="user_name" placeholder="이름을 입력하세요." autofocus required>
+                    <!-- 
+                        type: input type (rext, password, number, ...)
+                        name: name tag
+                        id: id tag
+                        placeholder: 공란시 반투명한 글씨
+                        autofocus: 새로고침시 자동 입력 대기
+                        required: 공란 불가
+                    -->
+                    <br>
+                    <label for="user_pw">
+                        [비밀번호] : 
+                        <input type="password" name="user_pw" id="user_pw" maxlength="12">
+                        <!-- 
+                            maxlength="12" : 최대 길이
+                        -->
+                    </label>
+                </fieldset>
+                
+                
+                <br><br>
+                <!-- <button>111</button> -->
+                <input type="submit" value="전송">
+                <input type="reset" value="다시 입력">
+            </form>
+        </div>
+
+
+
+    </body>
+</html>
