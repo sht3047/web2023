@@ -7,6 +7,14 @@
     <title>학과소개 - 서형탁</title>
 
     <style>
+        body{
+            background-color: aliceblue;
+            background-image: url("images/rhodos\ center\ metal.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            /* background-size: contain; */
+        }
         /* Container */
         #Container{
             /* 너비 */
@@ -16,23 +24,59 @@
             margin: 0 auto;
             /* block inner space */
             padding: 10px;
-            background-color: aliceblue;
+            /* background-color: lightgoldenrodyellow; */
             /* border: 10px olive solid; */
         }
         #main {
             width: 1000px;
-            border: 10px red solid;
+            border: 1px gray solid;
+            background-color: #F4F3EAAA;
 
         }
         img{
             width: 1000px;
         }
         h1{
-            color: white;
-            background-color: black;
+            color: #F4F3EA;
+            background-color: #333D51;
             padding: 20px;
             margin: 0;
             font-family: "맑은 고딕";
+        }
+        h2{
+            text-align: center;
+            color: #333D51;
+            font-size: 1.8em;
+        }
+        p{
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+        }
+        ul{
+            font-size: 1.2em;
+            line-height: 2em;
+            font-weight: bold;
+            list-style-type: none;
+            color: #D3AC2B;
+        }
+        ol{
+            font-size: 0.8em;
+            font-weight: normal;
+            color: #333D51;
+            background-color: #CBD0D8CC;
+        }
+        .info{
+            text-align: justify;
+            padding: 20px;
+            background-color: #D3AC2BAA;
+        }
+        .red_point{
+            color: red;
+        }
+        .mini_text{
+            font-size: 0.8em;
+            padding: 20px;
         }
 
         /* .main h2, p{
@@ -55,7 +99,7 @@
             <h2>
                 학과 소개
             </h2>
-            <p>
+            <p class="info">
                 본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여 
                 2023년 현재까지 34년 동안 2천여 명의 졸업생을 배출하였습니다.
                 <br>
@@ -72,7 +116,7 @@
             </h2>
             <p>
                 컴퓨터공학의 전반적인 교과목을 학습하여 다양한 IT분야로 진출할 수 있는 기본 역량을 배양하고,  <br>
-                사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능 등 고급 IT기술에 대한 심화 학습을 통해   <br>
+                <span class="red_point">사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능</span> 등 고급 IT기술에 대한 심화 학습을 통해   <br>
                 취업 역량을 강화하여 현장 밀착형 IT 전문가를 양성하는 전공 <br>
             </p>
             <hr>
@@ -82,7 +126,7 @@
             </h2>
             <p>
                 프로그램 코딩 주제의 기초 교육과정과 메타버스 콘텐츠 제작 주제의 심화 교육과정을 통해<br>
-                메타버스 및 게임 등 관련 분야에서 필요로 하는 코딩 역량과 콘텐츠 제작 역량을<br>
+                <span class="red_point">메타버스</span> 및 <span class="red_point">게임</span> 등 관련 분야에서 필요로 하는 코딩 역량과 콘텐츠 제작 역량을<br>
                 겸비한 창의적인 인력을 양성하는 전공 <br>
             </p>
             <hr>
@@ -106,7 +150,7 @@
             </p>
             <hr>
             <!-- address -->
-            <p>
+            <p class="mini_text">
                 (우) 46958 부산광역시 사상구 괘법동 신라대학교 국제교육관 440-1호 <br>
                 TEL : 051-999-5653,5497 FAX : 051-999-5160	
             </p>
