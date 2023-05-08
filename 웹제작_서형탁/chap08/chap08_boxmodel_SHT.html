@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block level, inline level - SHT</title>
+
+    <style>
+        .content{
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            padding: 10px;
+            border: 5px solid black;
+        }
+        #block *{
+            border: 1px solid black;
+            display: block;
+        }
+        #list *{
+            background-color: #999;
+            margin: 10px;
+            width: 150px;
+            height: 50px;
+        }
+        #inline *{
+            background-color: #F4F3EA;
+            border: 1px solid black;
+            display: inline;
+            margin: 10px;
+            width: 150px;
+            height: 50px;
+        }
+        #inline-block *{
+            background-color: #D3AC2B;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 10px;
+            width: 150px;
+            height: 50px;
+        }
+        .overlap{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            padding: 10px;
+            border: 5px solid black;
+        }
+        .box1, .box2{
+            width: 300px;
+            height: 150px;
+            margin: 30px;
+            padding: 10px;
+            border: 5px solid black;
+        }
+        .box1{
+            box-sizing: content-box;
+        }
+        .box2{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>컨텐츠 크기</h1>
+    <div class="content" style="background-color: #333D51;"></div>
+    <div class="content" style="background-color: #D3AC2B;"></div>
+    <div class="content" style="background-color: #F4F3EA;"></div>
+
+    <hr>
+
+    <h1>이미지 인라인 요소 배치</h1>
+    <div>
+        <img src="./images/pic1.jpg" alt="pic">
+        <img src="./images/pic2.jpg" alt="pic">
+        <img src="./images/pic3.jpg" alt="pic">
+    </div>
+
+    
+    <h1>이미지 블록 요소 배치</h1>
+    <div id="block">
+        <img src="images/pic1.jpg" alt="pic">
+        <img src="images/pic2.jpg" alt="pic">
+        <img src="images/pic3.jpg" alt="pic">
+    </div>
+
+    <hr>
+
+    <h1>메뉴 리스트 배치</h1>
+    <ul id="list">
+        <li>학과소개</li>
+        <li>컴퓨터공학전공</li>
+        <li>메타버스전공</li>
+        <li>교육목표</li>
+        <li>주요교과목</li>
+    </ul>
+
+    <h1>메뉴 인라인 배치</h1>
+    <ul id="inline">
+        <li>학과소개</li>
+        <li>컴퓨터공학전공</li>
+        <li>메타버스전공</li>
+        <li>교육목표</li>
+        <li>주요교과목</li>
+    </ul>
+
+    <h1>메뉴 인라인-블록 배치</h1>
+    <ul id="inline-block">
+        <li>학과소개</li>
+        <li>컴퓨터공학전공</li>
+        <li>메타버스전공</li>
+        <li>교육목표</li>
+        <li>주요교과목</li>
+    </ul>
+
+    <hr>
+
+    <h1>컨텐츠 마진 중첩</h1>
+    <div class="content" style="background-color: tomato;"></div>
+    <div class="content" style="background-color: blanchedalmond;"></div>
+    <div class="overlap" style="background-color: deepskyblue;"></div>
+    <div class="overlap" style="background-color: azure;"></div>
+    
+    <hr>
+
+    <h1>박스 사이즈</h1>
+    <div class="box1" style="background-color: lavender;">content-box</div>
+    <div class="box2" style="background-color: chartreuse;">border-box</div>
+
+</body>
+</html>
