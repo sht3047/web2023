@@ -1,0 +1,100 @@
+/* 
+Thema Color Code
+    Scholar
+        333D51
+        D3AC2B
+        F4F3EA
+        CBD0D8 
+*/
+
+*{
+    font-family: "맑은 고딕";
+    margin: 5px;
+}
+header, footer{
+    padding: 20px;
+    background-color: #F4F3EA;
+}
+nav{
+    background-color: #333d51;
+    text-align: center;
+    padding: 20px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+a{
+    transition: all 0.5s ;
+
+    color: #F4F3EA;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    padding: 20px;
+    border-radius: 20px;
+}
+a:link, a:visited{
+    color: #CBD0D8;
+}
+a:hover{
+    transition: all 0.5s ;
+    text-decoration: overline;
+    background-color: #D3AC2B33;
+    border-radius: 20px;
+    text-decoration: underline;
+}
+
+section{
+    background-color: #D3AC2BAA;
+    float: left;
+    width: 40%;
+    height: 200px;
+}
+.c1{
+    color: #CBD0D8;
+    padding: 10px;
+}
+
+#s1 > h1{
+    background-color: #333d51;
+}
+#s2 > h1{
+    background-color: #33513d;
+}
+#s3 > h1{
+    background-color: #51333d;
+}
+#s4 > h1{
+    background-color: #3d5133;
+}
+#s5 > h1{
+    background-color: #513d33;
+}
+#s6 > h1{
+    background-color: #3d3351;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+footer{
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
