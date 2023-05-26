@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition 3 - SHT</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+        .tr{
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: slateblue;
+
+            transition-property: width, height, background-color, transform;
+            transition-duration: 2s;
+        }
+        .tr:hover{
+            width: 200px;
+            height: 200px;
+            background-color: plum;
+            transform: rotate(180deg);
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="tr">
+        <h1>SHT</h1>
+    </div>
+
+</body>
+</html>

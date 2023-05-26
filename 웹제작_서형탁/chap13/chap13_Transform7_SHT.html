@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 7 - SHT</title>
+
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .container{
+            border: 1px solid red;
+            float: left;
+            perspective: 300px;
+            margin: 100px 0px 0px 100px;
+        }
+        .box1{
+            background-color: paleturquoise;
+            transform: rotateY(45deg);
+
+            -webkit-transform: rotateY(45deg);
+            -ms-transform: rotateY(45deg);
+            -moz-transform: rotateY(45deg);
+            -o-transform: rotateY(45deg);
+        }
+        .box2{
+            background-color: palegoldenrod;
+            transform: rotateX(45deg);
+            transform-origin: left top;
+
+            -webkit-transform-origin: rotateX(45deg);
+            -ms-transform-origin: rotateX(45deg);
+            -moz-transform-origin: rotateX(45deg);
+            -o-transform-origin: rotateX(45deg);
+
+            -webkit-transform: rotateX(45deg);
+            -ms-transform: rotateX(45deg);
+            -moz-transform: rotateX(45deg);
+            -o-transform: rotateX(45deg);
+        }
+        #tr-style1{
+            -webkit-transform-style: flat;
+            -ms-transform-style: flat;
+            -moz-transform-style: flat;
+            -o-transform-style: flat;
+
+            transform-style: flat;
+        }
+        #tr-style2{
+            -webkit-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+
+            transform-style: preserve-3d;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="box1" id="tr-style1">
+            <div class="box2">
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box1" id="tr-style2">
+            <div class="box2">
+            
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

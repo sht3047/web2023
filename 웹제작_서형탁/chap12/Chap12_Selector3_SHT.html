@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chap12 Selector3 - SHT</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 10px;
+            padding: 5px 30px;
+        }
+        li a{
+            color: navy;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 5px 20px;
+            background-color: lemonchiffon;
+        }
+        a[target="_blank"]{
+            /* background-image: url(images/newwindow.png) no-repeat center right; */
+            background-image: url(images/newwindow.png);
+            background-repeat: no-repeat;
+            background-position: center right;
+            padding-right: 30px;
+        }
+        [class ~= "button"]{
+            background-color: aliceblue;
+            border: 2px solid burlywood;
+            box-shadow: #AAAA 5px 4px;
+        }
+        .flat{
+            background-color: cornflowerblue;
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 표준안 사이트</h1>
+    <ul>
+        <li><a href="#">메뉴 1</a></li>
+        <li><a href="#">메뉴 2</a></li>
+        <li><a href="#" class="button">메뉴 3</a></li>
+        <li><a href="#" class="flat button">메뉴 4</a></li>
+    </ul>
+</body>
+</html>

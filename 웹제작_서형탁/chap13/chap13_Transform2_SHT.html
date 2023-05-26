@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 2 - SHT</title>
+
+    <style>
+        .orign{
+            width: 200px;
+            height: 134px;
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+        }
+
+        .orign div{
+            transition: all 0.5s;
+        }
+        .movex:hover{
+            -webkit-transform:  scaleX(1.2);
+            -ms-transform:      scaleX(1.2);
+            -moz-transform:     scaleX(1.2);
+            -o-transform:       scaleX(1.2);
+            
+            transform:          scaleX(1.2);
+            transition: all 0.5s;
+        }
+        .movey:hover{
+            -webkit-transform:  scaleY(1.5);
+            -ms-transform:      scaleY(1.5);
+            -moz-transform:     scaleY(1.5);
+            -o-transform:       scaleY(1.5);
+            
+            transform:          scaleY(1.5);
+            transition: all 0.5s;
+        }
+
+        .movexy:hover{
+            -webkit-transform:  scale(0.7);
+            -ms-transform:      scale(0.7);
+            -moz-transform:     scale(0.7);
+            -o-transform:       scale(0.7);
+
+            transform:          scale(0.7);
+            transition: all 0.5s;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="orign">
+        <div class="movex">
+            <img src="image/fruit.jpg" alt="">
+        </div>
+    </div>
+    <div class="orign">
+        <div class="movey">
+            <img src="image/fruit.jpg" alt="">
+        </div>
+    </div>
+    <div class="orign">
+        <div class="movexy">
+            <img src="image/fruit.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

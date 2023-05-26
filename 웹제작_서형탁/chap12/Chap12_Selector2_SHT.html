@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chap12 Selector2 - SHT</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 10px;
+            padding: 5px 30px;
+        }
+        li a{
+            color: navy;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 5px 20px;
+            background-color: lemonchiffon;
+        }
+        a[href]{
+            background-color: navajowhite;
+        }
+        a[target="_blank"]{
+            background-image: url(images/newwindow.png) no-repeat center right;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 표준안 사이트</h1>
+    <ul>
+        <li><a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML5</a></li>
+        <li><a href="https://www.w3.org/TR/selectors/">CSS Selector Level 3</a></li>
+        <li><a href="https://www.w3.org/TR/mediaqueries-3/">Media Query</a></li>
+    </ul>
+</body>
+</html>

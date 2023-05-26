@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chap12 Selector6 - SHT</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 10px;
+            padding: 5px 30px;
+        }
+        li > a{
+            color: navy;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 5px 20px;
+            background-color: lemonchiffon;
+        }
+        li{
+            display: inline-block;
+        }
+        a[href $= "hwp"]{
+            background: url(images/hwp_icon.gif) no-repeat left center;
+            padding: 5px 25px;
+        }
+        a[href $= "xlml"]{
+            background: url(images/excel_icon.gif) no-repeat left center;
+            padding: 5px 25px;
+        }
+</style>
+</head>
+<body>
+    <h1>HTML5 표준안 사이트</h1>
+    <ul>
+        <h2>학과 소개 파일 다운</h2>
+        <li><a href="info.hwp" >한글 파일</a></li>
+        <li><a href="info.xlml" >엑셀 파일</a></li>
+    </ul>
+</body>
+</html>

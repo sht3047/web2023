@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 5 - SHT</title>
+
+    <style>
+        .orign{
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+            -webkit-perspective: 200px;
+            perspective: 200px;
+            transform: rotateX(25deg);
+        }
+
+        .orign div{
+            transition: all 0.5s;
+        }
+        .skewX:hover{
+            -webkit-transform:  skewX(20deg);
+            -ms-transform:      skewX(20deg);
+            -moz-transform:     skewX(20deg);
+            -o-transform:       skewX(20deg);
+            transform:          skewX(20deg);
+            transition: all 0.5s;
+        }
+        .skewY:hover{
+            -webkit-transform:  skewY(-15deg);
+            -ms-transform:      skewY(-15deg);
+            -moz-transform:     skewY(-15deg);
+            -o-transform:       skewY(-15deg);
+            transform:          skewY(-15deg);
+            transition: all 0.5s;
+        }
+        .skewXY:hover{
+            -webkit-transform:  skewXY(15deg, 20deg);
+            -ms-transform:      skewXY(15deg, 20deg);
+            -moz-transform:     skewXY(15deg, 20deg);
+            -o-transform:       skewXY(15deg, 20deg);
+            transform:          skewXY(15deg, 20deg);
+            transition: all 0.5s;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="orign">
+        <div class="skewX">
+            <img src="image/rose.jpg" alt="">
+        </div>
+    </div>    <div class="orign">
+        <div class="skewY">
+            <img src="image/rose.jpg" alt="">
+        </div>
+    </div>    <div class="orign">
+        <div class="skewXY">
+            <img src="image/rose.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+</html>
