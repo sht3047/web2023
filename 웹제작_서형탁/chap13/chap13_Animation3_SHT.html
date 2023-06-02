@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 3 - SHT</title>
+
+    <style>
+        div{
+            height: 100px;
+            margin: 50px;
+            padding: 10px;
+        }
+        #box1{
+            border: 2px solid #BB9;
+            background-color: #257;
+            color: #FF7;
+            animation-name: moving;
+            animation-duration: 3s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes moving {
+            from{
+                width: 200px;
+                background-color: #257;
+                transform: scale(0.5) rotate(15deg);
+                opacity: 0.3;
+            }
+            to{
+                width: 400px;
+                background-color: #29C;
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div id="box1">CSS3 Animation</div>
+</body>
+</html>

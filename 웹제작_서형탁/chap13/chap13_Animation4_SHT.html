@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 4 - SHT</title>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            padding: 10px;
+        }
+        #box1{
+            border: 2px solid #BB9;
+            background-color: palevioletred;
+            color: #FF7;
+            animation-name: rotate;
+            animation-duration: 4s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rotate {
+            0%{
+                background-color: palevioletred;
+                transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            }
+            25%{
+                background-color: palegoldenrod;
+                transform: perspective(120px) rotateX(180deg) rotateY(0deg);
+            }
+            50%{
+                background-color: palegreen;
+                transform: perspective(120px) rotateX(180deg) rotateY(180deg);
+            }
+            75%{
+                background-color: paleturquoise;
+                transform: perspective(120px) rotateX(0deg) rotateY(180deg);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div id="box1"></div>
+</body>
+</html>

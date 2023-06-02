@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 2 - SHT</title>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+        }
+        #box1{
+            border: 2px solid #BB9;
+            background-color: #FA0;
+            animation-name: shape;
+            animation-duration: 3s;
+        }
+        #box2{
+            border: 2px solid #BB9;
+            background-color: #0AF;
+            animation-name: rotate;
+            animation-duration: 3s;
+        }
+
+        @keyframes shape {
+            from{
+                background-color: #FA0;
+                border: 2px solid goldenrod;
+
+            }
+            to{
+                background-color: #FF0;
+                border: 2px solid gold;
+                border-radius: 30%;
+            }
+        }
+
+        @keyframes rotate {
+            from{
+                background-color: #0AF;
+                border: 2px solid goldenrod;
+
+            }
+            to{
+                background-color: #0FF;
+                border: 2px solid gold;
+                transform: rotate(145deg);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>
